@@ -306,6 +306,19 @@ p {
   gap: 1rem;
 }
 
+.availability {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.availability .text-link {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
 /* --- Story Section --- */
 .story {
   padding: 8rem 0;
