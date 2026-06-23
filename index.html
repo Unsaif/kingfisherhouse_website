@@ -5,6 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
 <title>Kingfisher House</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
+<link rel="apple-touch-icon" href="/favicon-180x180.png">
+<meta name="description" content="Wild, foraged vinegars from the hedgerows of the Blackwater Valley, Co. Cork. Three small-batch Irish vinegars — Hawthorn, Elderflower and Cleaver." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Kingfisher House" />
+<meta property="og:title" content="Kingfisher House — Wild Foraged Irish Vinegars" />
+<meta property="og:description" content="Wild, foraged vinegars from the hedgerows of the Blackwater Valley, Co. Cork. Three small-batch Irish vinegars — Hawthorn, Elderflower and Cleaver." />
+<meta property="og:url" content="https://kingfisherhouse.ie/" />
+<meta property="og:image" content="https://kingfisherhouse.ie/assets/og/index.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Kingfisher House — Wild Foraged Irish Vinegars" />
+<meta name="twitter:description" content="Wild, foraged vinegars from the hedgerows of the Blackwater Valley, Co. Cork." />
+<meta name="twitter:image" content="https://kingfisherhouse.ie/assets/og/index.jpg" />
 </head>
 <body>
 <x-dc>
@@ -176,7 +192,7 @@
         <a href="#range" style="text-decoration:none;color:#1d2e34;" style-hover="color:#BC5D34;">The Range</a>
         <a href="story.html" style="text-decoration:none;color:#1d2e34;" style-hover="color:#BC5D34;">Story</a>
         <a href="our-place.html" style="text-decoration:none;color:#1d2e34;" style-hover="color:#BC5D34;">Our Place</a>
-        <a href="mailto:hello@kingfisherhouse.ie" style="text-decoration:none;color:#1d2e34;" style-hover="color:#BC5D34;">Email</a>
+        <a href="mailto:tim@kingfisherhouse.ie" style="text-decoration:none;color:#1d2e34;" style-hover="color:#BC5D34;">Email</a>
         <a href="https://www.instagram.com" target="_blank" rel="noreferrer" style="text-decoration:none;color:#1d2e34;" style-hover="color:#BC5D34;">Instagram</a>
       </div>
     </div>
@@ -186,7 +202,12 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1340},&quot;tastingNotes&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
 class Component extends DCLogic {
-  state = { email: '', status: '', statusColor: '#8a7f6f', submitted: false };
+  // ── Waitlist delivery (Web3Forms) ─────────────────────────────────────────
+  // Free, no account/dashboard required. Get an access key at https://web3forms.com
+  // (enter tim@kingfisherhouse.ie as the destination address) and paste it below.
+  // That single value is all that's needed for signups to land in your inbox.
+  WEB3FORMS_ACCESS_KEY = 'YOUR-WEB3FORMS-ACCESS-KEY';
+  state = { email: '', status: '', statusColor: '#8a7f6f', submitted: false, sending: false };
   renderVals() {
     const tastingNotes = this.props.tastingNotes ?? true;
     return {
@@ -197,15 +218,37 @@ class Component extends DCLogic {
       submitted: this.state.submitted,
       notSubmitted: !this.state.submitted,
       onInput: (e) => this.setState({ email: e.target.value, status: '' }),
-      onSubmit: (e) => {
+      onSubmit: async (e) => {
         e.preventDefault();
+        if (this.state.sending) return;
         const v = (this.state.email || '').trim();
         const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
         if (!ok) {
           this.setState({ status: 'Please enter a valid email address.', statusColor: '#BC5D34' });
           return;
         }
-        this.setState({ submitted: true });
+        this.setState({ sending: true, status: 'Adding you to the list…', statusColor: '#8a7f6f' });
+        try {
+          const res = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify({
+              access_key: this.WEB3FORMS_ACCESS_KEY,
+              subject: 'New Kingfisher House waitlist signup',
+              from_name: 'Kingfisher House waitlist',
+              email: v,
+              botcheck: ''
+            })
+          });
+          const data = await res.json();
+          if (data.success) {
+            this.setState({ submitted: true, sending: false });
+          } else {
+            this.setState({ sending: false, status: 'Sorry — that didn’t go through. Please email tim@kingfisherhouse.ie.', statusColor: '#BC5D34' });
+          }
+        } catch (err) {
+          this.setState({ sending: false, status: 'Network error — please email tim@kingfisherhouse.ie.', statusColor: '#BC5D34' });
+        }
       }
     };
   }

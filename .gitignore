@@ -1,1 +1,19 @@
+# macOS
+.DS_Store
+
+# Office / LibreOffice lock files
+.~lock.*#
+~$*
+
+# PDFs (working documents, not part of the published site)
 *.pdf
+
+# Private working documents — kept locally, never published to the public repo
+/docs/
+
+# Unused / superseded assets — kept locally but not tracked in the repo
+/script.js
+/styles.css
+/design/cleaver.png
+/design/content_capped_resolution.webp
+/design/kingfisher_house.svg
