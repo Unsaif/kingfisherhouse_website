@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<title>Our Story · Kingfisher House</title>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{background:#F4F0E7;color:#1d2e34;font-family:'Space Grotesk',sans-serif;font-weight:400;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  ::selection{background:#BC5D34;color:#FCFAF4;}
+  a{color:inherit;}
+  img{display:block;}
+  @keyframes kfRise{from{opacity:0;transform:translateY(26px);}to{opacity:1;transform:translateY(0);}}
+  @media (max-width:720px){
+    .kf-nav{flex-wrap:wrap!important;justify-content:center!important;row-gap:14px!important;padding:20px 0 12px!important;}
+    .kf-navlinks{order:3!important;width:100%!important;justify-content:center!important;gap:24px!important;}
+    .kf-navcta{display:none!important;}
+    .kf-facts{grid-template-columns:1fr!important;gap:28px!important;}
+    header{padding-top:36px!important;padding-bottom:40px!important;}
+    section{padding-top:58px!important;padding-bottom:58px!important;}
+  }
+</style>
+</helmet>
+
+<div style="background:#F4F0E7;color:#1d2e34;min-height:100vh;overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav class="kf-nav" style="display:flex;align-items:center;justify-content:space-between;width:min(1340px,92vw);margin:0 auto;padding:30px 0 26px;">
+    <a href="index.html" style="display:inline-flex;align-items:center;gap:13px;text-decoration:none;color:#1d2e34;">
+      <img src="assets/kingfisher_logo_tight.png" alt="Kingfisher House" style="width:30px;height:auto;" />
+      <span style="font-family:'Fraunces',serif;font-weight:400;font-size:1.18rem;letter-spacing:0.01em;">Kingfisher House</span>
+    </a>
+    <div class="kf-navlinks" style="display:flex;gap:38px;font-size:0.74rem;text-transform:uppercase;letter-spacing:0.16em;">
+      <a href="index.html#range" style="text-decoration:none;color:#1d2e34;opacity:0.62;" style-hover="opacity:1;">The Range</a>
+      <a href="story.html" style="text-decoration:none;color:#1d2e34;opacity:1;">Story</a>
+      <a href="our-place.html" style="text-decoration:none;color:#1d2e34;opacity:0.62;" style-hover="opacity:1;">Our Place</a>
+    </div>
+    <a href="index.html#signup" class="kf-navcta" style="display:inline-flex;align-items:center;padding:11px 22px;border:1px solid rgba(29,46,52,0.22);border-radius:2px;text-decoration:none;color:#1d2e34;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.13em;" style-hover="border-color:#1d2e34;">Keep in Touch</a>
+  </nav>
+
+  <!-- HERO -->
+  <header style="width:min(1100px,92vw);margin:0 auto;padding:64px 0 56px;text-align:center;">
+    <span style="display:block;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.2em;color:#8a7f6f;margin-bottom:22px;">The Story</span>
+    <h1 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(2.6rem,5vw,4rem);line-height:1.05;letter-spacing:-0.025em;margin:0;animation:kfRise 0.9s cubic-bezier(0.2,0.7,0.3,1) both;">It started with an abundant year in the hedgerows.</h1>
+    <p style="margin:26px auto 0;max-width:60ch;font-size:1.12rem;color:#43504f;">How a glut of wild fruit and a failed batch of hawthorn ketchup turned into three vinegars from the Blackwater Valley.</p>
+  </header>
+
+  <!-- BIG IMAGE -->
+  <div style="width:min(1340px,92vw);margin:0 auto 8px;">
+    <img src="assets/pictures/hawthorns.jpg" alt="Wild hawthorn heavy in the hedgerow" style="width:100%;height:clamp(320px,46vw,560px);object-fit:cover;object-position:center 78%;border-radius:4px;" />
+  </div>
+
+  <!-- NARRATIVE -->
+  <section style="width:min(760px,92vw);margin:0 auto;padding:72px 0 40px;">
+    <p style="font-family:'Fraunces',serif;font-weight:300;font-size:1.5rem;line-height:1.5;letter-spacing:-0.01em;margin:0 0 32px;color:#1d2e34;">One autumn the hedgerows around the house were heavier than we&rsquo;d ever seen, a kind of abundance you don&rsquo;t get every year.</p>
+    <p style="margin:0 0 20px;font-size:1.06rem;color:#43504f;">Rather than let it all fall, we started digging through cookbooks old and new, from old preserving manuals to modernist kitchen books, blending the two. It was inspiring to see how often these wild ingredients turned up in the old books, when nothing from the hedge was wasted.</p>
+    <p style="margin:0 0 20px;font-size:1.06rem;color:#43504f;">One of those experiments was meant to be hawthorn ketchup. It didn&rsquo;t quite work. But along the way we found something better: the cooked fruit, steeped in raw Irish cider vinegar, turned a deep red and tasted beautifully floral, bright, gently tannic and alive.</p>
+    <p style="margin:0;font-size:1.06rem;color:#43504f;">Elderflower and cleaver followed, each tasting unmistakably of the hedgerow it came from. Three vinegars, all from the same hedgerows, all made by hand in small batches.</p>
+  </section>
+
+  <!-- PULL FACTS -->
+  <section style="background:#16313b;color:#eef0ec;padding:80px 0;">
+    <div class="kf-facts" style="width:min(1100px,92vw);margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:40px;">
+      <div>
+        <h3 style="font-family:'Fraunces',serif;font-weight:400;font-size:1.4rem;margin:0 0 12px;color:#FCFAF4;">The fairy tree</h3>
+        <p style="margin:0;font-size:0.98rem;color:#cdd6d3;">Hawthorn runs deep through Irish folklore as the lone tree left standing out of respect. It felt right that it led the way for us.</p>
+      </div>
+      <div>
+        <h3 style="font-family:'Fraunces',serif;font-weight:400;font-size:1.4rem;margin:0 0 12px;color:#FCFAF4;">Slowly made</h3>
+        <p style="margin:0;font-size:0.98rem;color:#cdd6d3;">Small batches, gathered and made by hand, with nothing added that the hedgerow didn&rsquo;t give in the first place.</p>
+      </div>
+      <div>
+        <h3 style="font-family:'Fraunces',serif;font-weight:400;font-size:1.4rem;margin:0 0 12px;color:#FCFAF4;">Nothing wasted</h3>
+        <p style="margin:0;font-size:0.98rem;color:#cdd6d3;">The whole idea grew from a good year going to waste. We make only what the season gives, while it lasts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="width:min(900px,92vw);margin:0 auto;padding:88px 0;text-align:center;">
+    <h2 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(1.9rem,3.4vw,2.8rem);letter-spacing:-0.02em;margin:0;">Meet the vinegars.</h2>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px;">
+      <a href="index.html#range" style="display:inline-flex;align-items:center;padding:15px 30px;background:#1d2e34;color:#F4F0E7;border:1px solid #1d2e34;border-radius:2px;text-decoration:none;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.13em;" style-hover="background:#BC5D34;border-color:#BC5D34;">View the Range</a>
+      <a href="our-place.html" style="display:inline-flex;align-items:center;padding:15px 26px;color:#1d2e34;border:1px solid rgba(29,46,52,0.22);border-radius:2px;text-decoration:none;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.13em;" style-hover="border-color:#1d2e34;">Our Place</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="border-top:1px solid rgba(29,46,52,0.1);padding:46px 0;">
+    <div style="width:min(1340px,92vw);margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;">
+      <a href="index.html" style="display:flex;align-items:center;gap:13px;text-decoration:none;color:#1d2e34;">
+        <img src="assets/kingfisher_logo_tight.png" alt="" style="width:28px;height:auto;" />
+        <div>
+          <div style="font-family:'Fraunces',serif;font-size:1.02rem;">Kingfisher House</div>
+          <div style="font-size:0.82rem;color:#8a7f6f;">Killavullen, Co. Cork</div>
+        </div>
+      </a>
+      <div style="display:flex;gap:26px;font-size:0.82rem;flex-wrap:wrap;">
+        <a href="index.html#range" style="text-decoration:none;color:#1d2e34;" style-hover="color:#BC5D34;">The Range</a>
+        <a href="story.html" style="text-decoration:none;color:#1d2e34;" style-hover="color:#BC5D34;">Story</a>
+        <a href="our-place.html" style="text-decoration:none;color:#1d2e34;" style-hover="color:#BC5D34;">Our Place</a>
+        <a href="mailto:hello@kingfisherhouse.ie" style="text-decoration:none;color:#1d2e34;" style-hover="color:#BC5D34;">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1340}}"></script>
+</body>
+</html>

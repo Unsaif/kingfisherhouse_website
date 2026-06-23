@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<title>Our Place · Kingfisher House</title>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{background:#F4F0E7;color:#1d2e34;font-family:'Space Grotesk',sans-serif;font-weight:400;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  ::selection{background:#BC5D34;color:#FCFAF4;}
+  a{color:inherit;}
+  img{display:block;}
+  @keyframes kfRise{from{opacity:0;transform:translateY(26px);}to{opacity:1;transform:translateY(0);}}
+  @media (max-width:720px){
+    .kf-nav{flex-wrap:wrap!important;justify-content:center!important;row-gap:14px!important;padding:20px 0 12px!important;}
+    .kf-navlinks{order:3!important;width:100%!important;justify-content:center!important;gap:24px!important;}
+    .kf-navcta{display:none!important;}
+    .kf-ophero{grid-template-columns:1fr!important;gap:30px!important;padding:26px 0 46px!important;}
+    .kf-hennessy{grid-template-columns:1fr!important;gap:26px!important;padding:60px 0!important;}
+    .kf-hennessy img{height:300px!important;}
+    .kf-gallery{grid-template-columns:1fr 1fr!important;}
+    .kf-sec{padding-top:60px!important;padding-bottom:60px!important;}
+  }
+</style>
+</helmet>
+
+<div style="background:#F4F0E7;color:#1d2e34;min-height:100vh;overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav class="kf-nav" style="display:flex;align-items:center;justify-content:space-between;width:min(1340px,92vw);margin:0 auto;padding:30px 0 26px;">
+    <a href="index.html" style="display:inline-flex;align-items:center;gap:13px;text-decoration:none;color:#1d2e34;">
+      <img src="assets/kingfisher_logo_tight.png" alt="Kingfisher House" style="width:30px;height:auto;" />
+      <span style="font-family:'Fraunces',serif;font-weight:400;font-size:1.18rem;letter-spacing:0.01em;">Kingfisher House</span>
+    </a>
+    <div class="kf-navlinks" style="display:flex;gap:38px;font-size:0.74rem;text-transform:uppercase;letter-spacing:0.16em;">
+      <a href="index.html#range" style="text-decoration:none;color:#1d2e34;opacity:0.62;" style-hover="opacity:1;">The Range</a>
+      <a href="story.html" style="text-decoration:none;color:#1d2e34;opacity:0.62;" style-hover="opacity:1;">Story</a>
+      <a href="our-place.html" style="text-decoration:none;color:#1d2e34;opacity:1;">Our Place</a>
+    </div>
+    <a href="index.html#signup" class="kf-navcta" style="display:inline-flex;align-items:center;padding:11px 22px;border:1px solid rgba(29,46,52,0.22);border-radius:2px;text-decoration:none;color:#1d2e34;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.13em;" style-hover="border-color:#1d2e34;">Keep in Touch</a>
+  </nav>
+
+  <!-- HERO -->
+  <header class="kf-ophero" style="width:min(1240px,92vw);margin:0 auto;padding:56px 0 72px;display:grid;grid-template-columns:0.92fr 1.08fr;gap:64px;align-items:center;">
+    <div style="animation:kfRise 0.9s cubic-bezier(0.2,0.7,0.3,1) both;">
+      <span style="display:block;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.2em;color:#8a7f6f;margin-bottom:22px;">Our Place</span>
+      <h1 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(2.6rem,4.4vw,3.7rem);line-height:1.05;letter-spacing:-0.025em;margin:0;">The Blackwater Valley at Killavullen.</h1>
+      <p style="margin:26px 0 0;max-width:52ch;font-size:1.12rem;color:#43504f;">We make everything at Ballymacmoy, on the wooded banks of the River Blackwater in north Cork.</p>
+    </div>
+    <div>
+      <img src="assets/pictures/evening_sunset_over_river.jpg" alt="The River Blackwater at dusk" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 35%;border-radius:4px;box-shadow:0 24px 50px rgba(29,46,52,0.16);" />
+    </div>
+  </header>
+
+  <!-- HENNESSY STORY -->
+  <section style="background:#1d2e34;color:#FCFAF4;">
+    <div class="kf-hennessy" style="width:min(1340px,92vw);margin:0 auto;padding:96px 0;display:grid;grid-template-columns:1.05fr 0.95fr;gap:72px;align-items:center;">
+    <div>
+      <img src="assets/pictures/evening_sunset_over_field.jpg" alt="Evening sun over the fields above the river" style="width:100%;height:460px;object-fit:cover;border-radius:4px;" />
+    </div>
+    <div>
+      <span style="display:block;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.2em;color:#d98a5e;margin-bottom:18px;">A river with history</span>
+      <h2 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(2rem,3.2vw,2.8rem);line-height:1.1;letter-spacing:-0.02em;margin:0;color:#FCFAF4;">Where Hennessy set out.</h2>
+      <p style="margin:22px 0 0;max-width:50ch;color:#cdd6d3;">It was from this very townland that Richard Hennessy set out in the 1740s, before founding the cognac house that still carries his name. The same Blackwater valley that shaped that story still shapes ours.</p>
+      <p style="margin:16px 0 0;max-width:50ch;color:#cdd6d3;">We&rsquo;re a much smaller affair, a kitchen, a stretch of riverbank and a few good hedges, but it&rsquo;s a quiet privilege to make something rooted in the same ground.</p>
+    </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="kf-sec" style="background:#FCFAF4;border-top:1px solid rgba(29,46,52,0.1);padding:88px 0;">
+    <div style="width:min(1340px,92vw);margin:0 auto;">
+      <h2 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(1.9rem,3vw,2.5rem);letter-spacing:-0.02em;margin:0 0 44px;text-align:center;">From the hedgerows around us</h2>
+      <div class="kf-gallery" style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;">
+        <figure style="margin:0;">
+          <img src="assets/pictures/elderberries.jpg" alt="Elderberries" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;" />
+          <figcaption style="margin-top:12px;font-size:0.82rem;color:#8a7f6f;border-left:1px solid #BC5D34;padding-left:10px;">Elderberries</figcaption>
+        </figure>
+        <figure style="margin:0;">
+          <img src="assets/pictures/sloe_berries.jpg" alt="Sloes" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;" />
+          <figcaption style="margin-top:12px;font-size:0.82rem;color:#8a7f6f;border-left:1px solid #BC5D34;padding-left:10px;">Sloes</figcaption>
+        </figure>
+        <figure style="margin:0;">
+          <img src="assets/pictures/hawthorns.jpg" alt="Hawthorn" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;" />
+          <figcaption style="margin-top:12px;font-size:0.82rem;color:#8a7f6f;border-left:1px solid #BC5D34;padding-left:10px;">Hawthorn</figcaption>
+        </figure>
+        <figure style="margin:0;">
+          <img src="assets/pictures/evening_sunset.jpg" alt="Evening light over Killavullen" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;" />
+          <figcaption style="margin-top:12px;font-size:0.82rem;color:#8a7f6f;border-left:1px solid #BC5D34;padding-left:10px;">Evening light over Killavullen</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="kf-sec" style="width:min(900px,92vw);margin:0 auto;padding:88px 0;text-align:center;">
+    <h2 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(1.9rem,3.4vw,2.8rem);letter-spacing:-0.02em;margin:0;">Taste the valley.</h2>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px;">
+      <a href="index.html#range" style="display:inline-flex;align-items:center;padding:15px 30px;background:#1d2e34;color:#F4F0E7;border:1px solid #1d2e34;border-radius:2px;text-decoration:none;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.13em;" style-hover="background:#BC5D34;border-color:#BC5D34;">View the Range</a>
+      <a href="story.html" style="display:inline-flex;align-items:center;padding:15px 26px;color:#1d2e34;border:1px solid rgba(29,46,52,0.22);border-radius:2px;text-decoration:none;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.13em;" style-hover="border-color:#1d2e34;">Our Story</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="border-top:1px solid rgba(29,46,52,0.1);padding:46px 0;">
+    <div style="width:min(1340px,92vw);margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;">
+      <a href="index.html" style="display:flex;align-items:center;gap:13px;text-decoration:none;color:#1d2e34;">
+        <img src="assets/kingfisher_logo_tight.png" alt="" style="width:28px;height:auto;" />
+        <div>
+          <div style="font-family:'Fraunces',serif;font-size:1.02rem;">Kingfisher House</div>
+          <div style="font-size:0.82rem;color:#8a7f6f;">Killavullen, Co. Cork</div>
+        </div>
+      </a>
+      <div style="display:flex;gap:26px;font-size:0.82rem;flex-wrap:wrap;">
+        <a href="index.html#range" style="text-decoration:none;color:#1d2e34;" style-hover="color:#BC5D34;">The Range</a>
+        <a href="story.html" style="text-decoration:none;color:#1d2e34;" style-hover="color:#BC5D34;">Story</a>
+        <a href="our-place.html" style="text-decoration:none;color:#1d2e34;" style-hover="color:#BC5D34;">Our Place</a>
+        <a href="mailto:hello@kingfisherhouse.ie" style="text-decoration:none;color:#1d2e34;" style-hover="color:#BC5D34;">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1340}}"></script>
+</body>
+</html>

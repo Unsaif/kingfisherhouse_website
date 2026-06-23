@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<title>Elderflower Vinegar · Kingfisher House</title>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{background:#F4F0E7;color:#1d2e34;font-family:'Space Grotesk',sans-serif;font-weight:400;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  ::selection{background:#b08a2e;color:#FCFAF4;}
+  a{color:inherit;}
+  img{display:block;}
+  @keyframes kfRise{from{opacity:0;transform:translateY(26px);}to{opacity:1;transform:translateY(0);}}
+  @keyframes kfFade{from{opacity:0;}to{opacity:1;}}
+  @media (max-width:720px){
+    .kf-nav{flex-wrap:wrap!important;justify-content:center!important;row-gap:14px!important;padding:20px 0 12px!important;}
+    .kf-navlinks{order:3!important;width:100%!important;justify-content:center!important;gap:24px!important;}
+    .kf-navcta{display:none!important;}
+    .kf-hero{grid-template-columns:1fr!important;gap:30px!important;}
+    .kf-hero > div:first-child img{height:460px!important;}
+    .kf-serving{grid-template-columns:1fr!important;gap:26px!important;}
+    .kf-related{grid-template-columns:1fr!important;gap:18px!important;}
+    .kf-labelfigs{gap:30px!important;}
+    header{padding-top:16px!important;padding-bottom:54px!important;}
+    section{padding-top:60px!important;padding-bottom:60px!important;}
+  }
+</style>
+</helmet>
+
+<div style="background:#F4F0E7;color:#1d2e34;min-height:100vh;overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav class="kf-nav" style="display:flex;align-items:center;justify-content:space-between;width:min(1340px,92vw);margin:0 auto;padding:30px 0 26px;">
+    <a href="index.html" style="display:inline-flex;align-items:center;gap:13px;text-decoration:none;color:#1d2e34;">
+      <img src="assets/kingfisher_logo_tight.png" alt="Kingfisher House" style="width:30px;height:auto;" />
+      <span style="font-family:'Fraunces',serif;font-weight:400;font-size:1.18rem;letter-spacing:0.01em;">Kingfisher House</span>
+    </a>
+    <div class="kf-navlinks" style="display:flex;gap:38px;font-size:0.74rem;text-transform:uppercase;letter-spacing:0.16em;">
+      <a href="index.html#range" style="text-decoration:none;color:#1d2e34;opacity:0.62;" style-hover="opacity:1;">The Range</a>
+      <a href="story.html" style="text-decoration:none;color:#1d2e34;opacity:0.62;" style-hover="opacity:1;">Story</a>
+      <a href="our-place.html" style="text-decoration:none;color:#1d2e34;opacity:0.62;" style-hover="opacity:1;">Our Place</a>
+    </div>
+    <a href="index.html#signup" class="kf-navcta" style="display:inline-flex;align-items:center;padding:11px 22px;border:1px solid rgba(29,46,52,0.22);border-radius:2px;text-decoration:none;color:#1d2e34;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.13em;" style-hover="border-color:#1d2e34;">Keep in Touch</a>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div style="width:min(1340px,92vw);margin:0 auto;padding:14px 0 0;font-size:0.74rem;text-transform:uppercase;letter-spacing:0.14em;color:#8a7f6f;">
+    <a href="index.html#range" style="text-decoration:none;color:#8a7f6f;" style-hover="color:#b08a2e;">The Range</a> &nbsp;/&nbsp; <span style="color:#1d2e34;">Elderflower</span>
+  </div>
+
+  <!-- HERO -->
+  <header style="width:min(1340px,92vw);margin:0 auto;padding:28px 0 90px;">
+    <div class="kf-hero" style="display:grid;grid-template-columns:0.92fr 1.08fr;gap:72px;align-items:center;">
+      <div style="animation:kfFade 1s ease both;">
+        <img src="uploads/vinegar_bottle_mockup_elderflower.png" alt="Elderflower Vinegar bottle at dusk under a bare tree" style="width:100%;height:680px;object-fit:cover;border-radius:4px;" />
+      </div>
+      <div style="animation:kfRise 0.9s cubic-bezier(0.2,0.7,0.3,1) both;">
+        <span style="display:block;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.2em;color:#b08a2e;margin-bottom:20px;">The Range</span>
+        <h1 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(2.8rem,5vw,4.2rem);line-height:1.03;letter-spacing:-0.025em;margin:0;">Elderflower <em style="font-style:italic;color:#b08a2e;">Vinegar</em></h1>
+        <p style="margin:26px 0 0;max-width:46ch;font-size:1.1rem;color:#43504f;">Delicate and aromatic. Picked in the brief few weeks the cream blossom hangs heavy over the lanes, then steeped gently so none of its perfume is lost.</p>
+        <p style="margin:16px 0 0;max-width:46ch;color:#43504f;">The lightest of the three: pale gold and floral. It belongs with summer fruit, soft cheeses and anything that wants brightening without weight.</p>
+
+        <dl style="display:grid;grid-template-columns:1fr 1fr;gap:0;margin:36px 0 0;border-top:1px solid rgba(29,46,52,0.14);">
+          <div style="padding:16px 0;border-bottom:1px solid rgba(29,46,52,0.1);"><dt style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:#8a7f6f;">Volume</dt><dd style="margin:5px 0 0;font-family:'Fraunces',serif;font-size:1.05rem;">100 ml</dd></div>
+          <div style="padding:16px 0;border-bottom:1px solid rgba(29,46,52,0.1);"><dt style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:#8a7f6f;">Base</dt><dd style="margin:5px 0 0;font-family:'Fraunces',serif;font-size:1.05rem;">Raw cider vinegar</dd></div>
+          <div style="padding:16px 0;border-bottom:1px solid rgba(29,46,52,0.1);"><dt style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:#8a7f6f;">Botanical</dt><dd style="margin:5px 0 0;font-family:'Fraunces',serif;font-size:1.05rem;">Elderflower</dd></div>
+          <div style="padding:16px 0;border-bottom:1px solid rgba(29,46,52,0.1);"><dt style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:#8a7f6f;">Available</dt><dd style="margin:5px 0 0;font-family:'Fraunces',serif;font-size:1.05rem;">2026</dd></div>
+        </dl>
+
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px;">
+          <a href="index.html#signup" style="display:inline-flex;align-items:center;padding:15px 30px;background:#1d2e34;color:#F4F0E7;border:1px solid #1d2e34;border-radius:2px;text-decoration:none;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.13em;" style-hover="background:#b08a2e;border-color:#b08a2e;">Join the Waitlist</a>
+          <a href="index.html#range" style="display:inline-flex;align-items:center;padding:15px 26px;color:#1d2e34;border:1px solid rgba(29,46,52,0.22);border-radius:2px;text-decoration:none;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.13em;" style-hover="border-color:#1d2e34;">Back to Range</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- LABEL -->
+  <section style="background:#FCFAF4;border-top:1px solid rgba(29,46,52,0.1);padding:92px 0;">
+    <div style="width:min(1340px,92vw);margin:0 auto;text-align:center;">
+      <span style="display:block;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.2em;color:#b08a2e;margin-bottom:14px;">The Label</span>
+      <p style="margin:0 auto 50px;max-width:30ch;color:#8a7f6f;font-size:0.9rem;">Front and back &mdash; tap to look closer.</p>
+      <div class="kf-labelfigs" style="display:flex;gap:54px;justify-content:center;flex-wrap:wrap;">
+        <figure onClick="{{ openFront }}" style="margin:0;cursor:zoom-in;transition:transform 0.4s ease;" style-hover="transform:translateY(-6px);">
+          <img src="uploads/elderflower-front-181cbe79.png" alt="Elderflower Vinegar front label" style="width:100%;max-width:360px;height:auto;box-shadow:0 18px 50px rgba(29,46,52,0.16);border-radius:4px;" />
+          <figcaption style="margin-top:16px;font-size:0.74rem;text-transform:uppercase;letter-spacing:0.12em;color:#8a7f6f;">Front</figcaption>
+        </figure>
+        <figure onClick="{{ openBack }}" style="margin:0;cursor:zoom-in;transition:transform 0.4s ease;" style-hover="transform:translateY(-6px);">
+          <img src="uploads/elderflower-back-89b8ccd0.png" alt="Elderflower Vinegar back label" style="width:100%;max-width:360px;height:auto;box-shadow:0 18px 50px rgba(29,46,52,0.16);border-radius:4px;" />
+          <figcaption style="margin-top:16px;font-size:0.74rem;text-transform:uppercase;letter-spacing:0.12em;color:#8a7f6f;">Back</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- LABEL LIGHTBOX -->
+  <sc-if value="{{ lightboxOpen }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ closeLightbox }}" style="position:fixed;inset:0;background:rgba(20,30,34,0.88);display:flex;align-items:center;justify-content:center;z-index:200;padding:5vh 4vw;cursor:zoom-out;animation:kfFade 0.25s ease;">
+      <img src="{{ lightboxSrc }}" alt="Label, enlarged" style="max-height:90vh;max-width:92vw;width:auto;height:auto;box-shadow:0 30px 80px rgba(0,0,0,0.55);border-radius:5px;" />
+    </div>
+  </sc-if>
+
+  <!-- SERVING -->
+  <section style="width:min(1340px,92vw);margin:0 auto;padding:92px 0;">
+    <h2 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(1.9rem,3vw,2.5rem);letter-spacing:-0.02em;margin:0 0 44px;">Three ways to use it</h2>
+    <div class="kf-serving" style="display:grid;grid-template-columns:repeat(3,1fr);gap:30px;">
+      <div style="border-top:2px solid #b08a2e;padding-top:20px;">
+        <span style="font-family:'Fraunces',serif;font-size:0.95rem;color:#b08a2e;">01</span>
+        <h3 style="font-family:'Fraunces',serif;font-weight:400;font-size:1.3rem;margin:8px 0 10px;">Over summer fruit</h3>
+        <p style="margin:0;font-size:0.95rem;color:#43504f;">A few drops over strawberries, peaches or melon with a little black pepper and torn basil.</p>
+      </div>
+      <div style="border-top:2px solid #b08a2e;padding-top:20px;">
+        <span style="font-family:'Fraunces',serif;font-size:0.95rem;color:#b08a2e;">02</span>
+        <h3 style="font-family:'Fraunces',serif;font-weight:400;font-size:1.3rem;margin:8px 0 10px;">In a spritz</h3>
+        <p style="margin:0;font-size:0.95rem;color:#43504f;">Stir into cold soda over ice for a floral, alcohol-free aperitif, or top up a glass of dry sparkling wine.</p>
+      </div>
+      <div style="border-top:2px solid #b08a2e;padding-top:20px;">
+        <span style="font-family:'Fraunces',serif;font-size:0.95rem;color:#b08a2e;">03</span>
+        <h3 style="font-family:'Fraunces',serif;font-weight:400;font-size:1.3rem;margin:8px 0 10px;">Light dressings</h3>
+        <p style="margin:0;font-size:0.95rem;color:#43504f;">Shake with good olive oil for shaved fennel, cucumber and soft herbs, or to dress poached fish.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REST OF RANGE -->
+  <section style="background:#FCFAF4;border-top:1px solid rgba(29,46,52,0.1);padding:84px 0;">
+    <div style="width:min(1340px,92vw);margin:0 auto;">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:40px;flex-wrap:wrap;gap:12px;">
+        <h2 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(1.7rem,2.6vw,2.2rem);letter-spacing:-0.02em;margin:0;">The rest of the range</h2>
+        <a href="index.html#range" style="font-size:0.74rem;text-transform:uppercase;letter-spacing:0.13em;color:#b08a2e;text-decoration:none;" style-hover="color:#1d2e34;">View all &rarr;</a>
+      </div>
+      <div class="kf-related" style="display:grid;grid-template-columns:1fr 1fr;gap:28px;">
+        <a href="hawthorn.html" style="display:flex;gap:22px;align-items:center;text-decoration:none;color:inherit;background:#F4F0E7;border-radius:4px;padding:18px;transition:transform 0.4s ease;" style-hover="transform:translateY(-5px);">
+          <img src="uploads/vinegar_bottle_mockup_hawthorn_cap.png" alt="Hawthorn Vinegar bottle" style="width:96px;height:128px;object-fit:cover;border-radius:3px;" />
+          <div><h3 style="font-family:'Fraunces',serif;font-weight:400;font-size:1.35rem;margin:0 0 6px;">Hawthorn</h3><p style="margin:0;font-size:0.9rem;color:#43504f;">Bright, floral and gently tannic.</p></div>
+        </a>
+        <a href="cleaver.html" style="display:flex;gap:22px;align-items:center;text-decoration:none;color:inherit;background:#F4F0E7;border-radius:4px;padding:18px;transition:transform 0.4s ease;" style-hover="transform:translateY(-5px);">
+          <img src="uploads/vinegar_bottle_mockup_cleaver_cap.png" alt="Cleaver Vinegar bottle" style="width:96px;height:128px;object-fit:cover;border-radius:3px;" />
+          <div><h3 style="font-family:'Fraunces',serif;font-weight:400;font-size:1.35rem;margin:0 0 6px;">Cleaver</h3><p style="margin:0;font-size:0.9rem;color:#43504f;">Green, grassy and quietly savoury.</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="border-top:1px solid rgba(29,46,52,0.1);padding:46px 0;">
+    <div style="width:min(1340px,92vw);margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;">
+      <a href="index.html" style="display:flex;align-items:center;gap:13px;text-decoration:none;color:#1d2e34;">
+        <img src="assets/kingfisher_logo_tight.png" alt="" style="width:28px;height:auto;" />
+        <div>
+          <div style="font-family:'Fraunces',serif;font-size:1.02rem;">Kingfisher House</div>
+          <div style="font-size:0.82rem;color:#8a7f6f;">Killavullen, Co. Cork</div>
+        </div>
+      </a>
+      <div style="display:flex;gap:26px;font-size:0.82rem;flex-wrap:wrap;">
+        <a href="index.html#range" style="text-decoration:none;color:#1d2e34;" style-hover="color:#b08a2e;">The Range</a>
+        <a href="story.html" style="text-decoration:none;color:#1d2e34;" style-hover="color:#b08a2e;">Story</a>
+        <a href="our-place.html" style="text-decoration:none;color:#1d2e34;" style-hover="color:#b08a2e;">Our Place</a>
+        <a href="mailto:hello@kingfisherhouse.ie" style="text-decoration:none;color:#1d2e34;" style-hover="color:#b08a2e;">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1340}}">
+class Component extends DCLogic {
+  state = { lightboxOpen: false, lightboxSrc: '' };
+  renderVals() {
+    const open = (src) => this.setState({ lightboxOpen: true, lightboxSrc: src });
+    return {
+      lightboxOpen: this.state.lightboxOpen,
+      lightboxSrc: this.state.lightboxSrc,
+      openFront: () => open('uploads/elderflower-front-181cbe79.png'),
+      openBack: () => open('uploads/elderflower-back-89b8ccd0.png'),
+      closeLightbox: () => this.setState({ lightboxOpen: false }),
+    };
+  }
+}
+</script>
+</body>
+</html>
