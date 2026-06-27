@@ -7,11 +7,13 @@ hedgerows of the Blackwater Valley, Ireland.
 
 ## About
 
-A static website showcasing the Kingfisher House range of three vinegars:
+A static website showcasing the Kingfisher House range — three hedgerow
+vinegars and a sipping shrub:
 
-- **Hawthorn**
-- **Elderflower**
-- **Cleaver**
+- **Hawthorn** (vinegar)
+- **Elderflower** (vinegar)
+- **Cleaver** (vinegar)
+- **Hawthorn Shrub** (a drinking/sipping vinegar, diluted 1:5)
 
 The site is a set of hand-written HTML pages styled with an inline design
 system and a shared `support.js` runtime. There is no build step — what is in
@@ -25,6 +27,7 @@ the repository is what is served.
 | `hawthorn.html`   | Hawthorn Vinegar              |
 | `elderflower.html`| Elderflower Vinegar           |
 | `cleaver.html`    | Cleaver Vinegar               |
+| `hawthorn-shrub.html` | Hawthorn Shrub            |
 | `story.html`      | Our Story                     |
 | `our-place.html`  | Our Place                     |
 
